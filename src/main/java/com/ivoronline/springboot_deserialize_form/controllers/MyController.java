@@ -25,7 +25,7 @@ public class MyController {
   //================================================================================
   @ResponseBody
   @RequestMapping("GetData1")
-  String getData(PersonDTO personDTO) throws IOException {
+  String getData1(PersonDTO personDTO) throws IOException {
     byte[] contentBytes = personDTO.file.getBytes();
     String content      = new String(contentBytes);
     return content;
